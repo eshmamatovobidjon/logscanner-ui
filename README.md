@@ -11,7 +11,7 @@ React frontend for LogScanner - a powerful log file analysis tool.
 
 Modern, responsive web interface for LogScanner providing:
 
-- Drag & drop file upload with progress tracking
+- file upload with progress tracking
 - Real-time search and filtering
 - Log level visualization and statistics
 - Export functionality (CSV/JSON)
@@ -52,7 +52,7 @@ The dev server proxies API requests to `http://localhost:8080`. Make sure the ba
 
 ```bash
 # In another terminal, start the backend
-cd ../logscanner-backend
+cd ../logscanner-processor
 ./mvnw spring-boot:run
 ```
 
@@ -82,8 +82,6 @@ src/
 ## Features
 
 ### File Upload
-- Drag & drop support
-- Multiple file upload
 - Progress tracking
 - Format validation (.log, .txt, .json, .csv)
 - Size limit: 500MB per file
@@ -363,4 +361,4 @@ import { ConfigProvider } from 'antd';
 
 ## License
 
-MIT License - see [LICENSE](LICENSE) for details.
+Apache-2.0 License - see [LICENSE](LICENSE) for details.
